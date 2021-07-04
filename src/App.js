@@ -1,13 +1,18 @@
 import "./App.css";
 import Nav from "./component/nav";
-import Container from "./layout/container";
+import Container from "./component/container";
+import styled from "@emotion/styled";
+
+const HeroElement = styled.div``;
 
 const App = () => {
   return (
     <div className="App">
       <Nav />
       <Container>
-        <h1>Bismillah</h1>
+        <HeroElement>
+          <h1>Bismillah</h1>
+        </HeroElement>
       </Container>
     </div>
   );
