@@ -9,9 +9,16 @@ const Navbar = styled.div`
   place-content: center;
   justify-content: space-between;
   padding: 1rem;
+  margin: 0 10rem;
+  color: white;
+  font-size: 3rem;
 
   span {
     margin-left: 1rem;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 `;
 
@@ -20,10 +27,18 @@ const Nav = ({ children }) => {
     <Navbar>
       <div>LOGO</div>
       <div>
-        <span>ITEM</span>
-        <span>ITEM</span>
-        <span>ITEM</span>
-        <span>ITEM</span>
+        <span>
+          <a href="#profile">ITEM</a>
+        </span>
+        <span>
+          <a href="#description">ITEM</a>
+        </span>
+        <span>
+          <a href="#gallery">ITEM</a>
+        </span>
+        <span>
+          <a href="#maps">ITEM</a>
+        </span>
       </div>
     </Navbar>
   );
