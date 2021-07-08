@@ -26,7 +26,7 @@ const App = () => {
         <Container>
           <span>Virtual Wedding Invitation</span>
           <h1>Sami & Rifka</h1>
-          <span>10-01-2017</span>
+          <span>07-01-2017</span>
         </Container>
       </HeroElement>
       <Container>
