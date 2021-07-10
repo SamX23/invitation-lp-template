@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 const Navbar = styled.div`
   position: absolute;
@@ -6,12 +6,16 @@ const Navbar = styled.div`
   left: 0;
   right: 0;
   display: flex;
-  place-content: center;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
   margin: 0 10rem;
   color: white;
-  font-size: 3rem;
+  height: 4rem;
+
+  h1,
+  span {
+    font-size: 2rem;
+  }
 
   span {
     margin-left: 1rem;
@@ -22,24 +26,37 @@ const Navbar = styled.div`
   }
 `;
 
+const RSVP = styled.button`
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: unset;
+  color: white;
+  border: 2px dashed white;
+  height: 100%;
+  width: 5rem;
+  padding: 0 1rem;
+  margin: 0 1rem;
+`;
+
 const Nav = ({ children }) => {
   return (
     <Navbar>
-      <div>LOGO</div>
+      <h1>LOGO</h1>
       <div>
         <span>
-          <a href="#profile">ITEM</a>
+          <a href="#profile">Profile</a>
         </span>
         <span>
-          <a href="#description">ITEM</a>
+          <a href="#description">Description</a>
         </span>
         <span>
-          <a href="#gallery">ITEM</a>
+          <a href="#gallery">Gallery</a>
         </span>
         <span>
-          <a href="#maps">ITEM</a>
+          <a href="#maps">Maps</a>
         </span>
       </div>
+      <RSVP>test</RSVP>
     </Navbar>
   );
 };

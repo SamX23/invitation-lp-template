@@ -1,8 +1,9 @@
 import "./App.css";
 import Nav from "./component/nav";
 import Container from "./component/container";
-import styled from "@emotion/styled";
+import styled from "styled-components";
 import Footer from "./component/footer";
+import Countdown from "./component/countdown";
 
 const HeroElement = styled.div`
   background-image: url("/assets/bg-main.jpg");
@@ -36,6 +37,11 @@ const App = () => {
           <h1>Profile</h1>
         </ProfileElement>
       </Container>
+
+      <Container>
+        <Countdown />
+      </Container>
+
       <Container>
         <h1>Description</h1>
       </Container>
